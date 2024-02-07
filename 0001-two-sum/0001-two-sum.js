@@ -4,7 +4,7 @@
  * @return {number[]}
  */
  
-function twoSum(nums, target) {
+function twoSum(nums, target) { 
     const numIndicesMap = new Map();
 
     for (let i = 0; i < nums.length; i++) {
@@ -13,10 +13,8 @@ function twoSum(nums, target) {
         if (numIndicesMap.has(complement)) {
             return [numIndicesMap.get(complement), i];
         }
-
-        numIndicesMap.set(nums[i], i);
+     numIndicesMap.set(nums[i], i);
     }
-
     // If no solution is found
     return [];
-}
+    }
